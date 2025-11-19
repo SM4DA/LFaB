@@ -1,23 +1,23 @@
-# LoUQAL-for-QC
-Code repo for study involving use of low fidelity informed uncertainty as an AL strategy for training data sampling in chemical configuration space.
+# LFaB-for-QC
+Code repo for study involving use of low fidelity as bias in active learning sampling strategy for training data sampling in chemical configuration space.
 The scripts in this repository can be used on the datasets used in the work. The paper can be accessed at https://arxiv.org/abs/2508.15577 as a preprint. 
 If the interest is to only reproduce the plots, use the jupyter notebook.
 
 ## Software Setup
 In order to execute the experiments performed in this work, it is adviced that you set up a fresh environment with certain pythonic libraries installed. The following steps will be of relevance. 
 ```bash
-$ conda create --name LoUQAL_env python=3.9.18
+$ conda create --name LFaB_env python=3.9.18
 ```
 Activate the environment with 
 ```bash
-$ conda activate LoUQAL_env
+$ conda activate LFaB_env
 ```
 
 NOTE: If installing the `qml` package, follow steps from https://github.com/vivinvinod/QeMFi/tree/main.
 
 Install the required packages within this environment using:
 ```bash
-(LoUQAL_env)$ pip install -r requirements.txt
+(LFaB_env)$ pip install -r requirements.txt
 ```
 
 This environment can now be used to run the scripts from this code repository. 
@@ -40,6 +40,6 @@ Scripts to generate these descriptors for a given dataset are of the general for
 ## Reproducing the Results
 All plotting functions to produce the figures from the manuscript are found in `plottingroutines.ipynb`. These load pre-calculated data stored in `ModelData/` and `PlotData/`. At the same time, users can run their own computations using the scripts provided. Scripts labelled `GPR_AL_<dataset>.py` correspond to each dataset and can be run with modification to the path of the generated molecular descriptors. The file `GPR_model.py` is a simply GPR implementation using GpyTorch. For the QeMFi dataset, the script can be run specifying the molecule name directly from the terminal as
 ```bash
-(LoUQAL_env)$ python GPR_AL_QeMFi.py sma
+(LFaB_env)$ python GPR_AL_QeMFi.py sma
 ```
 which will produce the results for the SMA molecule from the dataset.
