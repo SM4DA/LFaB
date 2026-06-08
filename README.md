@@ -1,6 +1,7 @@
 # LFaB-for-QC
+Published as https://pubs.acs.org/doi/10.1021/acs.jctc.6c00009 in J. Chem. Theory Comput. Also available as https://arxiv.org/abs/2508.15577.
 Code repo for study involving use of low fidelity as bias in active learning sampling strategy for training data sampling in chemical configuration space.
-The scripts in this repository can be used on the datasets used in the work. The paper can be accessed at https://arxiv.org/abs/2508.15577 as a preprint. 
+The scripts in this repository can be used on the datasets used in the work.
 If the interest is to only reproduce the plots, use the jupyter notebook.
 
 ## Software Setup
